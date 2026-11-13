@@ -1,0 +1,58 @@
+@font-face{
+    font-family: 'pixelify sans';
+    src:url("pixelify-sans.ttf") format("truetype");
+    
+}
+
+
+#toppadding {
+    height:100px;
+}
+
+
+#mainbox {
+    width:700px;
+    height:350px;
+    margin:auto;
+    background-color:#ffcae193;
+    border-style:outset;
+    border-color:#f4e8ee;
+    border-width:5px;
+}
+
+#topbar{
+    margin-top:-19px;
+    width:700px;
+    height:35px;
+    background-color:#b052849c;
+}
+
+h2{
+    font-family:"pixelify sans";
+    font-size:24px;
+    color:white;
+    padding-top:3px;
+    padding-left:15px;
+}
+
+#countdown-mainbox{
+    width:300px;
+    height:220px;
+    margin-top:40px;
+    margin-left:30px;
+    border-radius:10px;
+    background-color:white;
+}
+
+
+.icon{
+    width:18px;
+    height:18px;
+    float:right;
+    margin:6px;
+    border-style:outset;
+    border-color:#d5c1cc;
+    border-width:2px;
+    background-color:#ffcae1;
+}
+
