@@ -11,9 +11,9 @@
 
 <div id="mainbox">
     <div id="topbar">
-        <div class="close icon"></div>
-        <div class="max icon"></div>
-        <div class="min icon"></div>
+        <button class="topbar-button" id="close-icon" onclick="buttonFunction('close')"></button>
+        <button class="topbar-button" id="max-icon" onclick="buttonFunction('max')"></button>
+        <button class="topbar-button" id="min-icon" onclick="buttonFunction('min')"></button>
         <h2>Meet the bebs!</h2>
     </div>
 
@@ -28,9 +28,9 @@
     </div>
 
     <div id="button-box">
-            <button onclick="button1Function('birthday')">When's your birthday?</button>
-            <button onclick="button1Function('animal')">What's your favourite animal?</button>
-            <button onclick="button1Function('hobbies')">What are your hobbies?</button>
+            <button class="dialogue-button" onclick="buttonFunction('birthday')">When's your birthday?</button>
+            <button class="dialogue-button" onclick="buttonFunction('animal')">What's your favourite animal?</button>
+            <button class="dialogue-button" onclick="buttonFunction('hobbies')">What are your hobbies?</button>
     </div>
 </div>
 

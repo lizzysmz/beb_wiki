@@ -29,9 +29,9 @@ body{
     background-color:#D37897;
 }
 
-.icon{
-    width:18px;
-    height:18px;
+.topbar-button{
+    width:22px;
+    height:22px;
     float:right;
     margin:6px;
     border-style:outset;
@@ -117,4 +117,25 @@ button{
     font-family:lower-pixel;
     color:black;
     font-size:17px;
+    cursor:pointer;
+}
+
+.dialogue-button:hover{
+    background:#e8abc0;
+    color:#FBFAF5;
+}
+
+.dialogue-button:active{
+    background:#D37897;
+    color:#FBFAF5;
+}
+
+.topbar-button:hover{
+    background:#ecb6c8;
+    color:#FBFAF5;
+}
+
+.topbar-button:active{
+    background:#D37897;
+    color:#FBFAF5;
 }
