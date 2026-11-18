@@ -1,12 +1,6 @@
 @font-face{
-    font-family: 'pixelify-sans';
-    src:url("pixelify-sans.ttf") format("truetype");
-    
-}
-
-@font-face{
     font-family:"lower-pixel";
-    src:url("lower-pixel.otf") format("opentype")
+    src:url("fonts/lower-pixel.otf") format("opentype")
 }
 
 body{

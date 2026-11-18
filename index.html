@@ -3,7 +3,7 @@
 <head>
     <title>Meet the bebs!</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="myscripts.js"></script>
 </head>
 <body>
 
@@ -18,21 +18,19 @@
     </div>
 
     <div id="character-box">
-        <img src="ces-img.png" alt="Pixel art of Ces">
+        <img src="pixel-art/ces-img.png" alt="Pixel art of Ces">
         <div id="nested-dialogue-box">
             <div id="name-box"><p>CES</p></div>
             <div id="dialogue-box">
-                <p>Hi I'm Ces!</p>
+                <p id="dialogue">Hi I'm Ces!</p>
             </div>
         </div>
     </div>
 
     <div id="button-box">
-            <button>When's your birthday?</button>
-            <button>What's your favourite animal?</button>
-            <button>What are your hobbies?</button>
-        </div>
-
+            <button onclick="button1Function('birthday')">When's your birthday?</button>
+            <button onclick="button1Function('animal')">What's your favourite animal?</button>
+            <button onclick="button1Function('hobbies')">What are your hobbies?</button>
     </div>
 </div>
 
