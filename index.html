@@ -11,9 +11,9 @@
 
 <div id="mainbox">
     <div id="topbar">
-        <button class="topbar-button" id="close-icon" onclick="buttonFunction('close')"></button>
-        <button class="topbar-button" id="max-icon" onclick="buttonFunction('max')"></button>
-        <button class="topbar-button" id="min-icon" onclick="buttonFunction('min')"></button>
+        <button class="topbar-button" id="close-icon" onclick="newDialogue('close', 'close-icon')"></button>
+        <button class="topbar-button" id="max-icon" onclick="newDialogue('max', 'max-icon')"></button>
+        <button class="topbar-button" id="min-icon" onclick="newDialogue('min', 'min-icon')"></button>
         <h2>Meet the bebs!</h2>
     </div>
 
@@ -28,9 +28,9 @@
     </div>
 
     <div id="button-box">
-            <button class="dialogue-button" onclick="buttonFunction('birthday')">When's your birthday?</button>
-            <button class="dialogue-button" onclick="buttonFunction('animal')">What's your favourite animal?</button>
-            <button class="dialogue-button" onclick="buttonFunction('hobbies')">What are your hobbies?</button>
+            <button class="dialogue-button" id="dialogueButton1" onclick="newDialogue('birthday', 'dialogueButton1')">When's your birthday?</button>
+            <button class="dialogue-button" id="dialogueButton2" onclick="newDialogue('animal', 'dialogueButton2')">What's your favourite animal?</button>
+            <button class="dialogue-button" id="dialogueButton3" onclick="newDialogue('hobbies', 'dialogueButton3')">What are your hobbies?</button>
     </div>
 </div>
 
