@@ -1,5 +1,6 @@
 let dialogueRunning = false;
 let currentBeb = "lizzy";
+let pageLoadDialogue = "Welcome! Come meet the bebs : )"
 
 function newDialogue(button) {    
     if (dialogueRunning == false){
@@ -23,6 +24,9 @@ function newDialogue(button) {
     };
 
     function dialogueOptions(object){
+        if (button == null) {
+            typingDialogue(pageLoadDialogue);
+        };
         if (button == "birthday") {
             typingDialogue(object.buttonDialogue1);
         };
@@ -69,7 +73,7 @@ function typingDialogue(newDialogue){
     dialogueRunning = true;
 
     let index = -1;
-    const speed = 60;
+    const speed = 50;
     const funcTime = (speed * newDialogue.length) + (speed * 2);
 
     typingAnimation(newDialogue);
@@ -83,35 +87,41 @@ function switchPersonButton(person){
         if (person == "ces"){
             document.getElementById("name").textContent = cesObject.name;
             typingDialogue(cesObject.startDialogue);
-            document.getElementById("pixel-art").src = cesObject.icon;
+            document.getElementById("pixel-art").src = cesObject.iconSrc;
+            document.getElementById("pixel-art").alt = cesObject.iconAlt;
         }
         else if (person == "hannah"){
             document.getElementById("name").textContent = hannahObject.name;
             typingDialogue(hannahObject.startDialogue);
-            document.getElementById("pixel-art").src = hannahObject.icon;
+            document.getElementById("pixel-art").src = hannahObject.iconSrc;
+            document.getElementById("pixel-art").alt = hannahObject.iconAlt;
         }
         else if (person == "lauren"){
             document.getElementById("name").textContent = laurenObject.name;
             typingDialogue(laurenObject.startDialogue);
-            document.getElementById("pixel-art").src = laurenObject.icon;
+            document.getElementById("pixel-art").src = laurenObject.iconSrc;
+            document.getElementById("pixel-art").alt = laurenObject.iconAlt;
         }
         else if (person == "julia"){
             document.getElementById("name").textContent = juliaObject.name;
             typingDialogue(juliaObject.startDialogue);
-            document.getElementById("pixel-art").src = juliaObject.icon;
+            document.getElementById("pixel-art").src = juliaObject.iconSrc;
+            document.getElementById("pixel-art").alt = juliaObject.iconAlt;
         }
         else if (person == "lizzy"){
             document.getElementById("name").textContent = lizzyObject.name;
             typingDialogue(lizzyObject.startDialogue);
-            document.getElementById("pixel-art").src = lizzyObject.icon;
+            document.getElementById("pixel-art").src = lizzyObject.iconSrc;
+            document.getElementById("pixel-art").alt = lizzyObject.iconAlt;
         };
     };
 };
 
 class personName{
-    constructor(name, icon, startDialogue, buttonDialogue1, buttonDialogue2, buttonDialogue3, closeDialogue, maxDialogue, minDialogue){
+    constructor(name, iconSrc, iconAlt, startDialogue, buttonDialogue1, buttonDialogue2, buttonDialogue3, closeDialogue, maxDialogue, minDialogue){
         this.name = name;
-        this.icon = icon;
+        this.iconSrc = iconSrc;
+        this.iconAlt = iconAlt;
         this.startDialogue = startDialogue;
         this.buttonDialogue1 = buttonDialogue1;
         this.buttonDialogue2 = buttonDialogue2;
@@ -124,10 +134,13 @@ class personName{
 
 /* Beb Objects */
 const cesObject = new personName(
-    "Ces", "pixel-art/ces-img.png",
+    "Ces", 
+    "pixel-art/ces-img.png",
+    "Pixel art of Ces",
     "Hi I'm Ces!",
     "My birthday's on 27th December, the same day as Hannah!", 
-    "Cats ^_^", "Ice skating~ I'm Level 4 Skate Excellent certified, not to brag...", 
+    "Cats ^_^", 
+    "Ice skating~ I'm Level 4 Skate Excellent certified, not to brag...", 
     "( I don't think that button does anything... )", 
     "Sorry, she hasn't worked out how to make this box bigger yet.", 
     "Um, that button is under construction at the moment."
@@ -137,6 +150,7 @@ const cesObject = new personName(
 const hannahObject = new personName(
     "Hannah", 
     "pixel-art/hannah-img.png",
+    "Pixel art of Hannah",
     "Hannah start dialogue", 
     "Hannah dialogue 1", 
     "Hannah dialogue 2",
@@ -149,6 +163,7 @@ const hannahObject = new personName(
 const laurenObject = new personName(
     "Lauren", 
     "pixel-art/lauren-img.png",
+    "Pixel art of Lauren",
     "Lauren start dialogue", 
     "Lauren dialogue 1", 
     "Lauren dialogue 2",
@@ -161,7 +176,8 @@ const laurenObject = new personName(
 const juliaObject = new personName(
     "Julia", 
     "pixel-art/julia-img.png",
-    "Julia start dialogue", 
+    "Pixel art of Julia",
+    "Hi I'm Julia Joby Joobla Gazza Ellis.", 
     "Julia dialogue 1", 
     "Julia dialogue 2",
     "Julia dialogue 3", 
@@ -173,6 +189,7 @@ const juliaObject = new personName(
 const lizzyObject = new personName(
     "Lizzy", 
     "pixel-art/lizzy-img.png",
+    "Pixel art of Lizzy",
     "Lizzy start dialogue", 
     "Lizzy dialogue 1", 
     "Lizzy dialogue 2",
