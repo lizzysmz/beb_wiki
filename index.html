@@ -18,20 +18,31 @@
     </div>
 
     <div id="character-box">
-        <img src="pixel-art/ces-img.png" alt="Pixel art of Ces">
+        <img id="pixel-art" src="pixel-art/ces-img.png" alt="Pixel art of Ces">
         <div id="nested-dialogue-box">
-            <div id="name-box"><p>CES</p></div>
+            <div id="name-box"><p id="name">CES</p></div>
             <div id="dialogue-box">
                 <p id="dialogue">Hi I'm Ces!</p>
             </div>
         </div>
     </div>
 
-    <div id="button-box">
-            <button class="dialogue-button" id="dialogueButton1" onclick="newDialogue('birthday', 'dialogueButton1')">When's your birthday?</button>
-            <button class="dialogue-button" id="dialogueButton2" onclick="newDialogue('animal', 'dialogueButton2')">What's your favourite animal?</button>
-            <button class="dialogue-button" id="dialogueButton3" onclick="newDialogue('hobbies', 'dialogueButton3')">What are your hobbies?</button>
+    <div id="dialogue-button-box">
+            <button class="dialogue-button" id="dialogueButton1" onclick="newDialogue('birthday')">When's your birthday?</button>
+            <button class="dialogue-button" id="dialogueButton2" onclick="newDialogue('animal')">What's your favourite animal?</button>
+            <button class="dialogue-button" id="dialogueButton3" onclick="newDialogue('hobbies')">What are your hobbies?</button>
     </div>
+</div>
+
+<div id="bottom-padding"></div>
+
+<div id="beb-button-box">
+
+    <button class="switch-button" onclick="switchPersonButton('hannah')">Hannah</button>
+    <button class="switch-button" onclick="switchPersonButton('ces')">Ces</button>
+    <button class="switch-button" onclick="switchPersonButton('lauren')">Lauren</button>
+    <button class="switch-button" onclick="switchPersonButton('julia')">Julia</button>
+    <button class="switch-button" onclick="switchPersonButton('lizzy')">Lizzy</button>
 </div>
 
 </body>

@@ -76,7 +76,7 @@ body{
     border-style: outset;
 }
 
-#button-box{
+#dialogue-button-box{
     display:flex;
     align-items:center;
     justify-content:space-evenly;
@@ -87,6 +87,18 @@ body{
     border-style:outset;
 }
 
+#bottom-padding {
+    height:30px;
+}
+
+#beb-button-box{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    width:700px;
+    height:70px;
+    margin:auto;
+}
 
 
 h2{
@@ -120,22 +132,17 @@ button{
     cursor:pointer;
 }
 
-.dialogue-button:hover{
-    background:#e8abc0;
-    color:#FBFAF5;
+.switch-button{
+    width:120px;
+    height:40px;
 }
 
-.dialogue-button:active{
-    background:#D37897;
-    color:#FBFAF5;
-}
-
-.topbar-button:hover{
+button:hover{
     background:#ecb6c8;
     color:#FBFAF5;
 }
 
-.topbar-button:active{
+button:active{
     background:#D37897;
     color:#FBFAF5;
 }
