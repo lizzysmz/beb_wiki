@@ -1,21 +1,35 @@
+let dialogue_running = false;
+
 function newDialogue(button, buttonId) {
     if (button == "birthday") {
-        typingDialogue(CesObject.buttonDialogue1, buttonId);
+        if (dialogue_running == false){
+            typingDialogue(CesObject.buttonDialogue1, buttonId);
+        };
     }
     if (button == "animal") {
-        typingDialogue(CesObject.buttonDialogue2, buttonId)
+        if (dialogue_running == false){
+            typingDialogue(CesObject.buttonDialogue2, buttonId)
+        };
     }
     if (button == "hobbies") {
-        typingDialogue(CesObject.buttonDialogue3, buttonId);
+        if (dialogue_running == false){
+            typingDialogue(CesObject.buttonDialogue3, buttonId);
+        };
     }
     if (button == "close") {
-        typingDialogue(CesObject.closeDialogue, buttonId);
+        if (dialogue_running == false){
+            typingDialogue(CesObject.closeDialogue, buttonId);
+        };
     }
     if (button == "max") {
-        typingDialogue(CesObject.maxDialogue, buttonId);
+        if (dialogue_running == false){
+            typingDialogue(CesObject.maxDialogue, buttonId);
+        };
     }
     if (button == "min") {
-        typingDialogue(CesObject.minDialogue, buttonId);
+        if (dialogue_running == false){
+            typingDialogue(CesObject.minDialogue, buttonId);
+        };
     }
 }
 
@@ -32,14 +46,17 @@ function typingDialogue(newDialogue, buttonId){
             document.getElementById('dialogue').textContent = "";
             index++;
             setTimeout(typingAnimation, speed);
-        };
+        }
+        
     };
     
     function enableButton(){
-        document.getElementById(buttonId).disabled = false;
+        dialogue_running = false;
+        
     }
 
-    document.getElementById(buttonId).disabled = true;
+    dialogue_running = true;
+
     let index = -1;
     const speed = 60;
     const funcTime = (speed * newDialogue.length) + (speed * 2);
