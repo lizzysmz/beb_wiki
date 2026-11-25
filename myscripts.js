@@ -158,23 +158,6 @@ class personName{
 };
 
 /* Beb Objects */
-const cesObject = new personName(
-    "Ces", 
-    "pixel-art/ces-img.png",
-    "Pixel art of Ces",
-    "Hi I'm Ces! What do you want to know?",
-    "Test",
-    "My birthday's on 27th December, the same day as Hannah!", 
-    "Montpelier cats...",
-    "I thought you'd never ask! There's Pixie, who's a little sphinx cat, and Sadie who may or may not give you fleas, and Misty who is fluffy and...", 
-    "You ice skate, huh?",
-    "That's a massive understandment. I'm Level 4 Skate Excellent certified. You better get out of my way when you see me at the rink...", 
-    "( I don't think that button does anything... )", 
-    "Sorry, she hasn't worked out how to make this box bigger yet.", 
-    "Um, that button is under construction at the moment."
-);
-
-
 const hannahObject = new personName(
     "Hannah", 
     "pixel-art/hannah-img.png",
@@ -191,6 +174,21 @@ const hannahObject = new personName(
     "..."
 );
 
+const cesObject = new personName(
+    "Ces", 
+    "pixel-art/ces-img.png",
+    "Pixel art of Ces",
+    "Hi I'm Ces! What do you want to know?",
+    "Montpelier cats...",
+    "I thought you'd never ask! There's Pixie, who's a little sphinx cat, and Sadie who may or may not give you fleas, and Misty who is fluffy and...", 
+    "You ice skate, huh?",
+    "That's a massive understandment. I'm Level 4 Skate Excellent certified. You better get out of my way when you see me at the rink...", 
+    "Boy's Planet",
+    "빛나, 빛나, 빛나, 빛나, 빛나!", 
+    "( I don't think that button does anything... )", 
+    "Sorry, she hasn't worked out how to make this box bigger yet.", 
+    "Um, that button is under construction at the moment."
+);
 
 const juliaObject = new personName(
     "Julia", 
@@ -199,29 +197,29 @@ const juliaObject = new personName(
     "Hi I'm Julia Joby Joobla Gazza Ellis.", 
     "Julia Joby Joobla Gazza Ellis...?",
     "Did I fucking stutter? : )", 
-    "Julia question 2",
-    "Julia dialogue 2",
-    "Julia question 3",
-    "Julia dialogue 3", 
-    "Julia close dialogue", 
-    "Julia max dialogue", 
-    "Julia min dialogue"
+    "I hear you make quizzes?",
+    "I am the ultimate quiz master. If you can't distinguish the year by my eyebrows, you're in big trouble...",
+    "Tell me a fact about you",
+    "I've seen 114 movies so far this year, which is one every 3 days! I guess you could say I like movies : )", 
+    "Joby!", 
+    "Joobla!", 
+    "Gazza!"
 );
 
 const laurenObject = new personName(
     "Lauren", 
     "pixel-art/lauren-img.png",
     "Pixel art of Lauren",
-    "**In a fantastic Australian accent** Hi there, Lauren here! Shrimp on the barbie! ", 
+    "*In a fantastic Australian accent* Hi there, Lauren here! Shrimp on the barbie! ", 
     "What's with the accent?",
-    "**In a flawless Australian accent** I don't know what you're talking about, mate. Emma!", 
-    "Lauren question 2",
-    "Lauren dialogue 2",
-    "Lauren question 3",
-    "Lauren dialogue 3", 
-    "Lauren close dialogue", 
-    "Lauren max dialogue", 
-    "Lauren min dialogue"
+    "*In a flawless Australian accent* I don't know what you're talking about, mate. Emma!", 
+    "What's your top emoji?",
+    "I don't think I know it off the top of my head *tomato emoji*",
+    "... Ginger?",
+    "Is that seriously a question...", 
+    "There's no escape.", 
+    "Stop that.", 
+    "That won't do anything."
 );
 
 const lizzyObject = new personName(
@@ -229,12 +227,12 @@ const lizzyObject = new personName(
     "pixel-art/lizzy-img.png",
     "Pixel art of Lizzy",
     "Back again, huh? What do you want to know?", 
-    "Lizzy question 1", 
-    "Lizzy dialogue 1", 
-    "Lizzy question 2",
-    "Lizzy dialogue 2",
-    "Lizzy question 3",
-    "Lizzy dialogue 3", 
+    "What is 'Meet the Bebs'?", 
+    "It's a little project I made for my friends! I'm learning web development and wanted a fun project to work on.", 
+    "Who is your secret santa?",
+    "That's supposed to be a secret you know... I'll give you a hint though... it's someone on this screen (I've said too much).",
+    ". . .",
+    "If you don't say something I'm going to start talking about Taylor Swift.", 
     "Hey! Stop pressing random buttons and exposing that they don't do anything!", 
     "I don't know how to make that button work, okay!?", 
     "(Maybe if I stay very still they won't ask why the button isn't working)."
