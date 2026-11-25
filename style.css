@@ -8,17 +8,16 @@ body{
 }
 
 #toppadding {
-    height:100px;
+    height:70px;
 }
 
 
 #mainbox {
     width:700px;
-    height:500px;
+    height:460px;
     margin:auto;
     background-color:#fbecf0;
     border-style:outset;
-    border-color:#d8d7d1;
     border-width:5px;
 }
 
@@ -44,7 +43,8 @@ body{
 #character-box{
     display:flex;
     align-items:center;
-    margin:40px;
+    margin:30px;
+    margin-bottom:20px;
     height:240px;
     background:#FBFAF5;
     border-style:outset;
@@ -70,8 +70,8 @@ body{
     margin:20px;
     margin-top:10px;
     padding:20px;
-    width:270px;
-    height:90px;
+    width:310px;
+    height:100px;
     background:#FBFAF5;
     border-style: outset;
 }
@@ -82,13 +82,15 @@ body{
     justify-content:space-evenly;
     padding:15px;
     height:70px;
-    margin:40px;
+    width:605px;
+    margin-left:30px;
+    margin-right:40px;
     background:#FBFAF5;
     border-style:outset;
 }
 
 #bottom-padding {
-    height:30px;
+    height:35px;
 }
 
 #beb-button-box{
@@ -96,10 +98,24 @@ body{
     align-items:center;
     justify-content:space-evenly;
     width:700px;
-    height:70px;
+    height:150px;
     margin:auto;
 }
 
+.beb-box{
+    height:150px;
+    width:110px;
+    padding:7px;
+    margin:5px;
+    border-style:outset;
+    background: #FBFAF5;
+}
+
+.beb-icon{
+    height:100px;
+    width:100px;
+    padding:5px;
+}
 
 h2{
     font-family:"lower-pixel";
@@ -133,12 +149,13 @@ button{
 }
 
 .switch-button{
-    width:120px;
-    height:40px;
-}
+    width:110px;
+    height:35px;
+    background:#f4dde7;
+} 
 
 button:hover{
-    background:#ecb6c8;
+    background:#efafc4;
     color:#FBFAF5;
 }
 
