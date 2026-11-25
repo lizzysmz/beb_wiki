@@ -160,7 +160,7 @@ class personName{
 /* Beb Objects */
 const hannahObject = new personName(
     "Hannah", 
-    "pixel-art/hannah-img.png",
+    "./pixel-art/hannah-img.png",
     "Pixel art of Hannah",
     "Hi~ What can I do for you? ", 
     "Do you like Monster Hunter?",
@@ -176,7 +176,7 @@ const hannahObject = new personName(
 
 const cesObject = new personName(
     "Ces", 
-    "pixel-art/ces-img.png",
+    "./pixel-art/ces-img.png",
     "Pixel art of Ces",
     "Hi I'm Ces! What do you want to know?",
     "Montpelier cats...",
@@ -192,7 +192,7 @@ const cesObject = new personName(
 
 const juliaObject = new personName(
     "Julia", 
-    "pixel-art/julia-img.png",
+    "./pixel-art/julia-img.png",
     "Pixel art of Julia",
     "Hi I'm Julia Joby Joobla Gazza Ellis.", 
     "Julia Joby Joobla Gazza Ellis...?",
@@ -208,7 +208,7 @@ const juliaObject = new personName(
 
 const laurenObject = new personName(
     "Lauren", 
-    "pixel-art/lauren-img.png",
+    "./pixel-art/lauren-img.png",
     "Pixel art of Lauren",
     "*In a fantastic Australian accent* Hi there, Lauren here! Shrimp on the barbie! ", 
     "What's with the accent?",
@@ -224,7 +224,7 @@ const laurenObject = new personName(
 
 const lizzyObject = new personName(
     "Lizzy", 
-    "pixel-art/lizzy-img.png",
+    "./pixel-art/lizzy-img.png",
     "Pixel art of Lizzy",
     "Back again, huh? What do you want to know?", 
     "What is 'Meet the Bebs'?", 
